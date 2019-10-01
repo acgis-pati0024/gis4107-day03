@@ -34,6 +34,7 @@ def acres_to_eqge_of_square(sq):
     sq_feet = acres * 43560
     return sq_feet
 
+"""converts degrees minutes seconds to decimal degrees."""
 def dms_to_dd(sec):
     second = 05
     minute = 25 + (second / 60)
@@ -47,3 +48,17 @@ def get_fuel_cost(cost):
     dollars_per_lit = 1.50
     fuel_cost = km_per_lit * dollars_per_lit
     return fuel_cost
+
+"""returns a distance in kilometres per hour to metres per second."""
+def kmperHour_to_mPerSec(kilo):
+    kph=10000.0000
+    convKm=kph * 1000 / 3600
+    return convKm
+
+"""returns population density using population of bears."""
+def get_bear_count(bear):
+    bears = 4
+    sq_m = 10000000
+    sq_km = 0.000001* sq_m
+    den_Per_m= bears*sq_km
+    return den_Per_m
